@@ -1,5 +1,5 @@
-import java.util.Scanner;
-class InsufficientFundException extends Exception
+import java.util.Scanner;	//Importing Scanner class
+class InsufficientFundException extends Exception	//Creating one class for insufficientFundException if user withdows and balance is less than withdroal money this will be called
 {
 	InsufficientFundException()
 	{
@@ -10,7 +10,7 @@ class InsufficientFundException extends Exception
 		super(s);
 	}
 }
-class NegativeAmountException extends Exception
+class NegativeAmountException extends Exception		//craeting class for Negative amount if user tries to debit negative balance
 {
 	NegativeAmountException()
 	{
@@ -40,7 +40,7 @@ class fund
 						System.out.println("\n-----------------------------");
 						e.printStackTrace();
 						System.out.println("\n------------------------------");
-						System.out.println(e.getMessage());
+						
 			
 					}
 					break;
@@ -52,7 +52,7 @@ class fund
 							System.out.println("\n--------------------------");
 							e.printStackTrace();
 							System.out.println("\n---------------------------");
-							System.out.println(e.getMessage());
+							
 						}
 						break;
 			case 'C':disp();
@@ -99,7 +99,7 @@ class fund
 			}
 		}
 	}
-	static void disp(){
+	static void disp(){	//display total balance left
 		System.out.println("\nTotal balance: "+BAL);
 	}
 }
